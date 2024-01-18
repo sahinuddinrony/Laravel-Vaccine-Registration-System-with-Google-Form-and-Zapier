@@ -14,11 +14,12 @@
   ```
 - Copy `.env.example` file to `.env` and edit database credentials there
 - Change your `.env` file with:
-    - `APP_NAME="Vacci Mate"`.
-    - `APP_TIMEZONE=Asia/Dhaka`.
-    - `DB_DATABASE=vacci_mate`.
+    - `APP_NAME="VR System"`.
+    - `DB_DATABASE=vaccine`.
     - `QUEUE_CONNECTION=database`.
     - Rest of set by your own.
+- Change your `config/app.php` file with:
+    - `'timezone' => 'Asia/Dhaka'`.
 - Run `composer install`
 - Run `php artisan key:generate`
 - Run `php artisan migrate --seed` (it has some seeded data for your testing)
@@ -26,14 +27,16 @@
 - That's it: launch the main URL
 
 ## Mail Configuration
-You can use **mailtrap** to set your email configuration testing email in this application. [Here](https://mailtrap.io/blog/send-email-in-laravel/) is the guideline of how to configure mailtrap for laravel.
+You can use **mailpit** to set your email configuration testing email in this application. [Here](https://github.com/axllent/mailpit) is the guideline of how to configure mailtrap for laravel.
 After set you email server, you are now ready to test email.
+- Change your `.env` file with:
+    - `MAIL_MAILER=smtp`.
+    - `MAIL_HOST=localhost`.
+    - `MAIL_PORT=1025`.
 
 ### Run queue and task scheduling
  - Run `php artisan queue:work`
  - Run `php artisan  schedule:work`
-
----
 
 ## I also use filament php to see user list in dashboard
 ### Login Info
@@ -43,8 +46,6 @@ After set you email server, you are now ready to test email.
 > email address:  ***admin@test.com***
 
 > password:  ***password***
-
----
 
 ## Integration Webhook
 You may set up [zapier](https://zapier.com/) webhook to access request from our application. Zapier is a platform where you can communicate between api to api or software to software. Zapier can trigger an event from thousands of services and can take action or pass payload to another service. To integrate zapier:
@@ -59,7 +60,6 @@ You may set up [zapier](https://zapier.com/) webhook to access request from our 
 ngrok is a cross-platform application that enables developers to expose a local development server to the Internet with minimal effort. 
 You may set up [Ngrok](https://ngrok.com/):
 - Create a Ngrok account.
-- Create new zap.
 - Download Ngrok and Run `ngrok http 80`
 
 ## Show Video link for more details
