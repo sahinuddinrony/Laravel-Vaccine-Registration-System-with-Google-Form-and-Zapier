@@ -7,7 +7,6 @@
 -----
 
 ### How to use
-
 - Clone the project with `git clone`
   ```bash
    (https://github.com/sahinuddinrony/Laravel-Vaccine-Registration-System-with-Google-Form-and-Zapier.git)
@@ -17,7 +16,6 @@
     - `APP_NAME="VR System"`.
     - `DB_DATABASE=vaccine`.
     - `QUEUE_CONNECTION=database`.
-    - Rest of set by your own.
 - Change your `config/app.php` file with:
     - `'timezone' => 'Asia/Dhaka'`.
 - Run `composer install`
@@ -66,6 +64,5 @@ You may set up [Ngrok](https://ngrok.com/):
 (https://drive.google.com/file/d/1DRxKLLAiHwdXuXVkTDL4FEwUS5xEaVla/view)
 
 ## ## Greetings
-
 - [Linkedin](https://www.linkedin.com/in/sahinuddinrony/)
 
