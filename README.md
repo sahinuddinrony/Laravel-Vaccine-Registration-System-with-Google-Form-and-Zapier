@@ -32,7 +32,7 @@ After set you email server, you are now ready to test email.
     - `MAIL_HOST=localhost`.
     - `MAIL_PORT=1025`.
 
-### Run queue and task scheduling
+## Run queue and task scheduling
  - Run `php artisan queue:work`
  - Run `php artisan  schedule:work`
 
@@ -64,5 +64,5 @@ You may set up [Ngrok](https://ngrok.com/):
 (https://drive.google.com/file/d/1DRxKLLAiHwdXuXVkTDL4FEwUS5xEaVla/view)
 
 ## ## Greetings
-- [Linkedin](https://www.linkedin.com/in/sahinuddinrony/)
+[Linkedin](https://www.linkedin.com/in/sahinuddinrony/)
 
