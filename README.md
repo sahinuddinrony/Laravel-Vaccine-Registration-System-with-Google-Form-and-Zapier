@@ -51,7 +51,7 @@ You may set up [zapier](https://zapier.com/) webhook to access request from our 
 - Create a zapier account.
 - Create new zap.
 - Connect trigger with the created google form.
-- Connect webhook action that point to our application endpoint `/webhook/register`.
+- Connect webhook action that point to our application endpoint `/zapier-webhook`.
 - Publish zap.
 
 ## Integration Cross Platform Application (Ngrok)
